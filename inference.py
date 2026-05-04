@@ -13,7 +13,7 @@ index = faiss.read_index("index.faiss")
 with open("chunks.pkl", "rb") as f:
     chunks = pickle.load(f)
 
-client = Groq(api_key="GROQ_API_KEY")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 def get_standards(query):
     start = time.time()
