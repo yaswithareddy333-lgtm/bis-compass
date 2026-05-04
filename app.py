@@ -168,7 +168,7 @@ def load_rag():
         chunks = pickle.load(f)
     return model, index, chunks
 
-client = Groq(api_key="GROK_API_KEY")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # -------------------- HEADER --------------------
 st.markdown("""
