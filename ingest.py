@@ -16,7 +16,7 @@ def load_rag():
     return model, index, chunks
 
 # Configure Groq
-client = Groq(api_key="GROQ_API_KEY")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # App
 st.title("🏭 BIS Compliance Checker")
